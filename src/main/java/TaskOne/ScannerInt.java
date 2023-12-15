@@ -26,10 +26,11 @@ public class ScannerInt {
     public void enterScannerTaskFirst(){
         Scanner scanner = new Scanner(System.in);
         int task = scanner.nextInt();
+
         switch (task){
             case(1):{
                 TaskFirst taskFirst = new TaskFirst();
-                taskFirst.scannerFirst();
+                taskFirst.ageHello();
                 break;
             }
             case (2):{TaskSecond taskSecond = new TaskSecond();

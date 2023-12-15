@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 
 public class TaskSecond extends ScannerInt {
-    String nameOriginal = "Вячеслав";
-    String noName = "Нет такого имени";
-    String enterName ="Введите имя";
-    String hello = "Привет";
+    final String nameOriginal = "Вячеслав";
+   final String noName = "Нет такого имени";
+    final String enterName ="Введите имя";
+    final String hello = "Привет";
 
     public void scannerSecond(){
         Scanner scanner = new Scanner(System.in);

@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 
 public class TaskThird extends  ScannerInt{
-    String oneArraySize = "Введите размер одномерного массива, который будет заполнен по порядку";
-    String sizeArrays = "Выберите:";
-    String sizeArraysOne = "1. Одномерный массив, заполненый по порядку";
-    String sizeArraysRandom = "2. Одномерный массив, заполненый рандомно";
-    String randomArraySize = "Введите размер одномерного массива, который будет заполнен ранодомно";
+   final String oneArraySize = "Введите размер одномерного массива, который будет заполнен по порядку";
+   final String sizeArrays = "Выберите:";
+    final String sizeArraysOne = "1. Одномерный массив, заполненый по порядку";
+   final String sizeArraysRandom = "2. Одномерный массив, заполненый рандомно";
+   final String randomArraySize = "Введите размер одномерного массива, который будет заполнен ранодомно";
     public void scannerThird(){
         Scanner scanner = new Scanner(System.in);
         System.out.println(sizeArrays + "\n" + sizeArraysOne + "\n" + sizeArraysRandom);

@@ -1,23 +1,26 @@
 package TaskOne;
 import java.util.Scanner;
 public class TaskFirst extends ScannerInt{
-    String wordHello = "Привет";
-    String age = "Введите возраст:";
-    String els ="Попробуйте снова";
-    public void scannerFirst(){
-        Scanner scanner = new Scanner(System.in);
+    final String wordHello = "Привет";
+    final String age = "Введите возраст:";
+    final String els ="Попробуйте снова";
+
+
+    public void ageHello (){
+     Scanner scanner = new Scanner(System.in);
         System.out.println(age);
         int ageInput = scanner.nextInt();
-        ageHello(ageInput);
-    }
-    public void ageHello (int ageInput){
-        if ( ageInput > 7) {
-            System.out.println(wordHello);
-            returnToMenu();
+        System.out.println(els);
+
+        while (ageInput <= 7) {
+
+            ageInput = scanner.nextInt();
+
+            if (ageInput > 7) {
+                System.out.println(wordHello);
+            } else {
+                System.out.println(els);
+            }
         }
-        else if (ageInput<=7){
-            System.out.println(els);
-            scannerFirst();
-        }
-    }
-}
+        returnToMenu();
+    }}
